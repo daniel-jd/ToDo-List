@@ -38,28 +38,29 @@
                                         <rect key="frame" x="0.0" y="64" width="414" height="744"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="todoCellID" textLabel="lFc-57-FsG" detailTextLabel="KEU-T9-Fss" style="IBUITableViewCellStyleSubtitle" id="GZL-ag-E0q">
-                                                <rect key="frame" x="0.0" y="28" width="414" height="55.5"/>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" accessoryType="checkmark" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="todoCellID" editingAccessoryType="checkmark" textLabel="lFc-57-FsG" detailTextLabel="KEU-T9-Fss" style="IBUITableViewCellStyleSubtitle" id="GZL-ag-E0q">
+                                                <rect key="frame" x="0.0" y="28" width="414" height="70.5"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GZL-ag-E0q" id="iWO-vi-e9R">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="55.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="370" height="70.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lFc-57-FsG">
-                                                            <rect key="frame" x="20" y="10" width="33" height="20.5"/>
+                                                            <rect key="frame" x="20" y="9.5" width="41" height="25.5"/>
                                                             <autoresizingMask key="autoresizingMask"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="21"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="KEU-T9-Fss">
-                                                            <rect key="frame" x="20" y="31.5" width="44" height="14.5"/>
+                                                            <rect key="frame" x="20" y="38.5" width="56" height="19.5"/>
                                                             <autoresizingMask key="autoresizingMask"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                            <nil key="textColor"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
+                                                    <color key="tintColor" red="0.33657594029999999" green="0.15985567849999999" blue="0.64718000860000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 </tableViewCellContentView>
                                             </tableViewCell>
                                         </prototypes>
@@ -115,7 +116,7 @@
                                                             <constraint firstAttribute="height" constant="40" id="eJu-RS-1hG"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                                                     </textField>
                                                 </subviews>
                                                 <constraints>
