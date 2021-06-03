@@ -13,7 +13,7 @@ class ToDoViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     var tasks = [Task]()
-
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,20 +28,29 @@ class ToDoViewController: UIViewController {
         
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        tableView.reloadData()
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let vc = segue.destination as? AddViewController else {
+            return
+        }
+        vc.view.setNeedsDisplay()
+        vc.delegate = self
     }
     
-
-
-    @IBAction func addDidTap(_ sender: UIButton) {
-        //let segue = performSegue(withIdentifier: "toAddScreen", sender: addButton)
-        //prepare(for: segue, sender: addButton)
-    }
     
 }
 
-// MARK: - Delegate & Data Source
+// MARK: Add Task Delegate
+
+extension ToDoViewController: AddTaskDelegate {
+    func addTask(_ task: Task) {
+        tasks.append(task)
+        tableView.reloadData()
+    }
+    
+    
+}
+
+// MARK: Delegate & Data Source
 
 extension ToDoViewController: UITableViewDataSource {
     

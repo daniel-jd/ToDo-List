@@ -5,6 +5,10 @@
 //  Created by Daniel Yamrak on 01.06.2021.
 //
 
+protocol AddTaskDelegate: AnyObject {
+    func addTask(_ task: Task)
+}
+
 import UIKit
 
 class AddViewController: UIViewController {
@@ -12,12 +16,11 @@ class AddViewController: UIViewController {
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var descTextField: UITextField!
     
-    let todoVC = ToDoViewController()
+    weak var delegate: AddTaskDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
 
@@ -27,7 +30,7 @@ class AddViewController: UIViewController {
             return
         }
         let newTask = Task(title: title, description: desc)
-        todoVC.tasks.append(newTask)
+        delegate?.addTask(newTask)
         navigationController?.popViewController(animated: true)
     }
 }
