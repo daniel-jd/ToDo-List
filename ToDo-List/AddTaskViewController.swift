@@ -11,7 +11,7 @@ protocol AddTaskDelegate: AnyObject {
 
 import UIKit
 
-class AddViewController: UIViewController {
+class AddTaskViewController: UIViewController {
 
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var descTextField: UITextField!
@@ -29,7 +29,7 @@ class AddViewController: UIViewController {
               let desc = descTextField.text else {
             return
         }
-        let newTask = Task(title: title, description: desc)
+        let newTask = Task(title: title, description: desc, isDone: false)
         delegate?.addTask(newTask)
         navigationController?.popViewController(animated: true)
     }

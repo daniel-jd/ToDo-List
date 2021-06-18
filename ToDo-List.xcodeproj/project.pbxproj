@@ -13,7 +13,8 @@
 		A505483E2666122000E52A48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A505483D2666122000E52A48 /* Assets.xcassets */; };
 		A50548412666122000E52A48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A505483F2666122000E52A48 /* LaunchScreen.storyboard */; };
 		A505484B266619F200E52A48 /* ToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A505484A266619F200E52A48 /* ToDoViewController.swift */; };
-		A505484E26661A0300E52A48 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A505484D26661A0300E52A48 /* AddViewController.swift */; };
+		A505484E26661A0300E52A48 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A505484D26661A0300E52A48 /* AddTaskViewController.swift */; };
+		A585C002267B13610000D19E /* EditTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A585C001267B13610000D19E /* EditTaskViewController.swift */; };
 		A5863010266757DF00DA5EA8 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = A586300F266757DF00DA5EA8 /* Task.swift */; };
 /* End PBXBuildFile section */
 
@@ -26,7 +27,8 @@
 		A50548402666122000E52A48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A50548422666122000E52A48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A505484A266619F200E52A48 /* ToDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoViewController.swift; sourceTree = "<group>"; };
-		A505484D26661A0300E52A48 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		A505484D26661A0300E52A48 /* AddTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
+		A585C001267B13610000D19E /* EditTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTaskViewController.swift; sourceTree = "<group>"; };
 		A586300F266757DF00DA5EA8 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,7 +66,8 @@
 				A50548362666121D00E52A48 /* SceneDelegate.swift */,
 				A586300F266757DF00DA5EA8 /* Task.swift */,
 				A505484A266619F200E52A48 /* ToDoViewController.swift */,
-				A505484D26661A0300E52A48 /* AddViewController.swift */,
+				A505484D26661A0300E52A48 /* AddTaskViewController.swift */,
+				A585C001267B13610000D19E /* EditTaskViewController.swift */,
 				A505483A2666121D00E52A48 /* Main.storyboard */,
 				A505483D2666122000E52A48 /* Assets.xcassets */,
 				A505483F2666122000E52A48 /* LaunchScreen.storyboard */,
@@ -143,7 +146,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A505484E26661A0300E52A48 /* AddViewController.swift in Sources */,
+				A505484E26661A0300E52A48 /* AddTaskViewController.swift in Sources */,
+				A585C002267B13610000D19E /* EditTaskViewController.swift in Sources */,
 				A505484B266619F200E52A48 /* ToDoViewController.swift in Sources */,
 				A5863010266757DF00DA5EA8 /* Task.swift in Sources */,
 				A50548352666121D00E52A48 /* AppDelegate.swift in Sources */,

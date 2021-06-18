@@ -7,7 +7,15 @@
 
 import Foundation
 
-struct Task {
+struct Task: Codable, Equatable {
+    
+//    enum Priority {
+//        case high, normal, low
+//    }
+    
     var title: String
     var description: String
+    var isDone = false
+//    var priority: Priority = .normal
+    
 }
