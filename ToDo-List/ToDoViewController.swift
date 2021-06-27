@@ -21,11 +21,6 @@ class ToDoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // dummy data
-//        tasks.append(Task(title: "Walk the dog", description: "At least for an hour"))
-//        tasks.append(Task(title: "Buy milk", description: "With the discount only"))
-//        tasks.append(Task(title: "Make coffe for your wife", description: "Milk, no sugar"))
-        
         readTasksFromUserDefaults()
         
         tableView.dataSource = self
